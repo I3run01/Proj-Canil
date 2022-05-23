@@ -25,6 +25,8 @@ let DogsList = [
     new Dog('images', 'Bengal', 'Branco, Preto e Amarelo ', 'Masculino'),
     new Dog('images', 'Siamês', 'Amarelo e Preto ', 'Masculino'),
     new Dog('images', 'Sphynx', 'Branco ', 'Masculino'),
+    new Dog('images', 'Tetra Neon', 'Vermelho e Azul ', 'Masculino'),
+    new Dog('images', 'Mato Grosso', 'Laranja ', 'Masculino'),
     new Dog('images', 'Limpa Vidro', 'Verde e Branco ', 'Masculino'),
     new Dog('images', 'Tanictis', 'Vermelho ', 'Masculino'),
     new Dog('images', 'Acará Bandeira', 'Preto ', 'Masculino'),
