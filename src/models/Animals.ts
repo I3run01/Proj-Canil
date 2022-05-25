@@ -15,7 +15,7 @@ class Animal {
     }
 }
 
-let DogsList = [
+let AnimalsList = [
     new Animal('images/pastor-alemao.jpg', 'Pastor Alemão', 'Amarelo e Preto', 'Masculino', 'dog'),
     new Animal('images/labrador.jpg', 'Labrador-retriever', 'Branco', 'Masculino', 'dog'),
     new Animal('images/zwergspitz.jpg', 'Zwergspitz', 'Amarelo', 'Masculino', 'dog'),
@@ -37,6 +37,21 @@ let DogsList = [
 
 export const Animals = {
     getAll: () => {
-        return DogsList
+        return AnimalsList
+    },
+
+    getDog: () => {
+        let DogList = AnimalsList.filter(animal => animal.kind == 'dog')
+        return DogList
+    },
+
+    getCat: () => {
+        let CatList = AnimalsList.filter(animal => animal.kind == 'cat')
+        return CatList
+    },
+
+    getFish: () => {
+        let FishList = AnimalsList.filter(animal => animal.kind == 'fish')
+        return FishList
     }
 }

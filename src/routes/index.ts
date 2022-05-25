@@ -1,11 +1,12 @@
 import { Router, Request, Response } from "express"
-import * as homeController from "../controllers/homeController";
-import * as catsControllers from "../controllers/catsControllers";
+import * as AnimalsController from "../controllers/AllAnimalsController";
 
 const router = Router()
 
-router.get('/', homeController.home)
-router.get('/cats', catsControllers.cats)
+router.get('/', AnimalsController.home)
+router.get('/dogs', AnimalsController.dogs)
+router.get('/cats', AnimalsController.cats)
+router.get('/fishes', AnimalsController.fishes)
 
 
 export default router;
