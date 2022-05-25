@@ -32,9 +32,10 @@ export const fishes = (req: Request, res: Response ) => {
 
 export const name = (req: Request, res: Response) => {
 
-    let NameReq: string = String(req.body.gender as string)
+    let AniamalReq:string = req.body.animal as string
 
-    res.render('/pages/gender',{
-        NameReq
+    let AnimalName = Animals.getName(AniamalReq)
+    res.render('pages/name', {
+        AnimalName,
     })
 }

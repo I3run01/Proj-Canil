@@ -47,7 +47,7 @@ Serve para criar um servidor
     npm install dotenv
 
 *Rodar o arquivo: Terminal
-    nodemon -e ts, json, mustache local-do-arquivo
+    nodemon -e ts, json, mustache src/server.ts
 
     Para criar um atalho do comando nodemon:
     No package.json-> script -> Coloque:

@@ -1,15 +1,14 @@
 {{>partials/header}}
 
-{{# CatList }}
     <div class="container list">
-        <div class="item">
-            <img src={{photo}} class="item--image" />
-            <div class="item--name"> {{name}} </div>
-            <div class="item--color">  {{color}} </div>
-            <div class="item--genre">Gênero: {{gender}} </div>
-        </div>
+        {{# CatList }}
+            <div class="item">
+                <img src={{photo}} class="item--image" />
+                <div class="item--name"> {{name}} </div>
+                <div class="item--color">  {{color}} </div>
+                <div class="item--genre">Gênero: {{gender}} </div>
+            </div>
+        {{/ CatList }}
     </div>
-    
-{{/ CatList }}
 
 {{>partials/footer}}
