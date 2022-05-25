@@ -29,3 +29,12 @@ export const fishes = (req: Request, res: Response ) => {
         FishList,
     })
 }
+
+export const name = (req: Request, res: Response) => {
+
+    let NameReq: string = String(req.body.gender as string)
+
+    res.render('/pages/gender',{
+        NameReq
+    })
+}

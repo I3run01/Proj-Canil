@@ -53,5 +53,8 @@ export const Animals = {
     getFish: () => {
         let FishList = AnimalsList.filter(animal => animal.kind == 'fish')
         return FishList
-    }
+    },
+
+    getName: (value: string) => AnimalsList.filter(animal => animal.name == value)
+    
 }
