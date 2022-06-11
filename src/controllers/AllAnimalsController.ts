@@ -32,7 +32,7 @@ export const fishes = (req: Request, res: Response ) => {
 
 export const name = (req: Request, res: Response) => {
 
-    let AniamalReq:string = req.body.animal as string
+    let AniamalReq:string = req.query.animal as string
 
     let AnimalName = Animals.getName(AniamalReq)
     res.render('pages/name', {

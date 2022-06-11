@@ -7,6 +7,6 @@ router.get('/', AnimalsController.home)
 router.get('/dogs', AnimalsController.dogs)
 router.get('/cats', AnimalsController.cats)
 router.get('/fishes', AnimalsController.fishes)
-router.post('/animal', AnimalsController.name)
+router.get('/animal', AnimalsController.name)
 
 export default router;
